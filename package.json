@@ -1,0 +1,26 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "This is Assignment Submission ",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"nodemon ij.js\" \"npm test -- --updateSnapshot\"",
+    "test": "npm install -g jest && jest --watchAll --no-cache"
+  },
+  "author": "Yogesh",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.4.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "helmet": "^6.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.6.5",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "jest": "^29.1.2",
+    "supertest": "^6.3.0"
+  }
+}
